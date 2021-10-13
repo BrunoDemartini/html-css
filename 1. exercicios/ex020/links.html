@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= b, initial-scale=1.0">
+    <title>Personlizando Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited{
+            color: pink;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: blueviolet ;
+        }
+
+        a::after{/* Pseudo elementos é identificado por :: */
+
+            
+            content: ' bunda'; /* Estudar o parametro content(Conteúdo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+
+        }
+
+        a::before{
+            content: 'Saaaaaaaaaaaaalve ';
+            color: black;
+            text-decoration: none;
+        }
+        .especial{
+            background-color: lightcoral;
+        }
+        .especial:hover{
+            /* animation-delay: 3s; */
+            transition-delay: 100ms;
+            background-color: lightgray;
+            
+        }
+        .especial::after{
+            color: black;
+        }
+        .especial:hover::after{
+            -o-transition-property: inherit;
+            transition-duration: 1s;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Personalizando Links</h1>
+    
+    <ul>
+        <li><a target="_blank" href="https://github.com/gustavoguanabara">Repositório GitHub</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ">Canal do Youtube</a></li>
+        <li><a target="_blank" class="especial" href="https://www.cursoemvideo.com/">Site do Curso em Vídeo</a></li>
+        <li><a target="_blank" href="https://www.cursoemvivii.com/">Teste do pseudo classe VISITED</a></li>
+    </ul>
+
+    <!-- Lembrando: Pseudo Classes alteram o estado dos elementos. -->
+
+    <!-- Pode agir nas classes, elementos e ids: Alteram o conteúdo
+         São identificados por Dois dois pontos(::)
+    
+    -->
+
+
+
+</body>
+</html>

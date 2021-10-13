@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <!-- <style>
+        .mercado li{
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Estudo de Listas</h1>
+    
+    <h2>Listas Ordenadas</h2>
+    
+    <ol type="i">
+        <li>escovar os dentes</li>
+        <li>tomar os dentes</li>
+        <li>se fuder</li>
+        <li>voltar pra casa</li>
+        <li>tomar banho</li>
+        <li>fazer o almoço do proximo dia</li>
+        <li>sair correndo e chutar um idoso</li>
+    </ol>
+
+    <!--Listas que a ordem importa-->
+
+    <h2>Listas não ordenadas</h2>
+
+    <ul class="mercado" type="square">
+        <li>pão</li>
+        <li>ovo</li>
+        <li>chumbo</li>
+        <li>ovo de aranha</li>
+        <li>bunda</li>
+    </ul>
+    <!--tipos de identificação
+    disc - bola preenchida(padrao)
+    circle - bola vazada
+    square - quadrado preenchido
+    -->
+
+    <h2>Minhas linguagens favoritas</h2>
+
+    <ol>
+        <li>antigas</li>
+        <ol type="a">
+            <!-- aninhamento -->
+            <li>Java</li>
+            <li>Python</li>
+        </ol>
+        <li>novas</li>
+            <ol type="a" start="2">  
+                <li>Python</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+            </ol>
+    </ol>
+
+    <h2>Meus jogos favoritos</h2>
+
+    <ul>
+        <li>PS2</li>
+            <ol>
+                <li>bully</li>
+                <li>god of war</li>
+                <li>gta san andreas</li>
+            </ol>
+        <li>PC</li>
+            <ol>
+                <li>gta v</li>
+                <li>skyrim</li>
+                <li>far cry</li>
+                    <ol>
+                        <li>far cry 3</li>
+                        <li>far cry 5</li>
+                    </ol>
+                <li>assassin's creed</li>
+                    <ol>
+                        <li>assassin's creed 3</li>
+                        <li>assassin's creed 4</li>
+                    </ol>
+                <li>CS GO</li>
+            </ol>
+    </ul>
+
+    <h2>Lista de Definições</h2>
+
+    <!-- Como se fosse um dicionario, vai colocar o item e a descrição dele -->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação usada para o desenvolvimento de sites</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de design dos sites</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação utilizada na interação dos sites </dd>
+    </dl>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* 
+
+    id = #
+    class = .
+
+*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    color: rgb(4, 100, 0);
+}
+
+h3{
+    color: rgb(51, 77, 49);
+}
+
+#html h3{
+    /* font-family: cursive; */
+    color: blue;
+
+}
+
+.teste{
+    color: blue;
+}
+
+.ola, .ola h3{
+    color: brown;
+}
+
+.basico{
+    color: chartreuse;
+}
+
+.intermediario{
+    color: darkgoldenrod;
+}
+
+.avancado{
+    color: darkred;
+}
+
+.destaque{
+    font-size: 3em;
+    background-color: deeppink;
+}

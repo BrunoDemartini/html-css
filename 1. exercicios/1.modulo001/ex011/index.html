@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <p><strong>OBS:</strong>A imagem base(usada no computador) deve ficar por ultimo, literalmente como a base da estrura. Acima dela é colocado os sources(limitação de tamnanho)</p>
+    <p>Quando atingir o tamanho maximo de resolução a imagem vai ser alterada conforme configurado</p>
+
+    <!-- É só referente ao heigth da pagina -->
+
+    <!-- Baouns Rate - taxa de rejeição: pessoas que saem do seu site, logo o mecanismo de busca começa a entender como não util -->
+
+    <h1>Reproduzindo Audios</h1>
+    <!-- <audio src="midias/guanacast-33.mp3" controls autoplay></audio> - uma maneira de adicionar -->
+    <audio preload="metadata" autoplay controls loop>
+
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <!-- arquivos "wav" não são recomendados porque são muito pesados-->
+        <p>Infelizmente sue navegador não consegue reproduzir o áudio. <a href="midias/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio>
+
+
+    <!-- Fiquei com duvidas de como funciona o source em relação a compatibilidade, se não tiver compatibilidade com mp3, ogg e wav ele carregará a mensagem que não é possivel reproduzir o audio
+    OBS: Não consegui reproduzir -->
+
+    <!-- padrão de preload "auto" é perigoso, pelo fato que vai considerar como 100% carregado quando os arquivos do site forem baixados, nesse exemplo, dps de baixar todo o podcast 
+    
+    Metadata: Vai carregar informações como: Tempo do Audio
+    
+    None: não vai carregar nada até clicar nos controladores-->
+
+    <h1>Reproduzindo Vídeos</h1>
+
+    <!-- Programa HandBrake: Ferramenta para conversão de vídeos -->
+    <video">
+
+
+    </video>
+
+</body>
+</html>

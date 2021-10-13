@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+
+            Dentro de um mesmo documento o ID tem que ser UNICO. Ou seja, se ho h3: HTML Básico utilizei o ID "HTML" não esta correto utilizar ele em outro h3 para usar o mesmo style.
+
+            Para isso utiliza-se a class
+
+            A class faz estilização personalizada porem pode ser utilizada em mais tags ao mesmo tempo
+
+            Não dar nome as classes referente a forma, mas sim referente a sua função.
+
+                Classe de titulos basicos para mudar a cor para verde:
+                    Defino o nome como "basico"
+                    E não como "verde"
+
+            É possivel informar ID, Class, ID e Class, Class e Class
+
+            Ele segue uma hierarquia. Generico -> Class -> ID
+                Porem ele leva de herança as configurações do elemento pai
+                OBS: Verificar isso no material em PDF
+
+     -->
+    <h1>Criando Sites com HTML e CSS</h1>
+
+    <h2 class="teste">Aprendendo HTML</h2>
+
+    <div class="ola">
+        <h3>teste ola</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt illo exercitationem quos reiciendis numquam consequuntur officia nisi esse a corporis, sed recusandae repellendus aut iusto architecto voluptates officiis dolor expedita?</p>
+    </div>
+
+    <h3 class="basico">HTML Básico</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis, cupiditate quam molestias assumenda exercitationem qui! Eius ducimus, aliquam libero tempora dolorem voluptatum, possimus sit minus fugit perferendis ipsum nihil!</p>
+
+    <h3 class="intermediario">HTML Intermediario</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis, cupiditate quam molestias assumenda exercitationem qui! Eius ducimus, aliquam libero tempora dolorem voluptatum, possimus sit minus fugit perferendis ipsum nihil!</p>
+
+    <h3 class="avancado">HTML Avançado</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis, cupiditate quam molestias assumenda exercitationem qui! Eius ducimus, aliquam libero tempora dolorem voluptatum, possimus sit minus fugit perferendis ipsum nihil!</p>
+
+    <h2>Aprendendo CSS</h2>
+
+    <h3 class="basico">CSS Básico</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis, cupiditate quam molestias assumenda exercitationem qui! Eius ducimus, aliquam libero tempora dolorem voluptatum, possimus sit minus fugit perferendis ipsum nihil!</p>
+    
+    <h3 class="intermediario">CSS Intermediário</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis, cupiditate quam molestias assumenda exercitationem qui! Eius ducimus, aliquam libero tempora dolorem voluptatum, possimus sit minus fugit perferendis ipsum nihil!</p>
+
+    <h3 class="avancado destaque">CSS Avançado</h3>
+    <!-- É possivel informar duas classes e não é separado por virgula
+         Da também para colocar ID e Class
+    -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem facilis, cupiditate quam molestias assumenda exercitationem qui! Eius ducimus, aliquam libero tempora dolorem voluptatum, possimus sit minus fugit perferendis ipsum nihil!</p>
+</body>
+</html>

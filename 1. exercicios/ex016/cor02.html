@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+        *{ /* Configuração global */
+            height: 100%;
+            /* para criar o degrade e não ficar "zebrado" é necessário usar essa configu de "height: 100%;" */
+        }
+        body{
+            /* background-color: crimson; */
+
+            /* to right ou em gral =  90deg*/
+            background-image: linear-gradient(#535ACB 10%, #BF33B2, #D54080 30%, #E44673 50%, #FF563E, #FF7B45, #FF8F48
+            , #FFCB52);
+            background-attachment: fixed;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+
+    <style>
+        body{
+            font-size: 2em;
+        }
+
+        h2{
+            font: italic bolder 3em 'arial, sans-serif';
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Realizei esta atividade cap 14 p3 no note da giovana
+    
+    na aula 14-3 vimos a utilzação do font-family e como declarar as fontes de uma forma "fonts safe"
+
+    Que é parecido com usar o "picture" e definir varios tamanhos de imagem ou o Video e declarar varias extenssões de video
+
+    Serve para que se o aparelho que esta abrindo o site não tiver uma fonte especifica ele consiga abrir a proxima e se nada der certo ter uma fonte generica para que ele utilize uma fonte no estilo que vc quer mas que pega qualquer uma que o aparelho tenha disponivel
+
+
+    Aula 14-4
+
+    medidas absolutas
+        cm, mm, in(polegada), px, pt(ponto), pc(pyca)
+
+
+    medidas relativas
+        em(relativa ao tamanho da fonte)
+        ex(relefente a altura X)
+        rem(relativo a fonte configurada no body)
+        vw/vh (porcentagem da view port tanto w quanto h)
+
+        Recomendações do w3c: px, em
+            Porem o rem também é muito útil
+
+        O TAMANHO NORMAL DO NAVEGADOR É DE 16PX
+            por isso usar o rem, para fazer aquele esquema de deixar o size padrão com 10px e tornar a conversão mais facil 
+
+            16px = 1em = 1rem
+
+
+            questionamento:
+
+            como que funciona para deixar o em relativo a tela? 
+            Teria que utilizar o vw/vh? 
+
+
+
+        aula 14-5
+
+        Peso Estilo e shorthand font
+
+        peso: font-weigth(ligther normal bold bodler)
+        nem todas as fontes tem todos esses pesos, normalmente só tem normal e bold
+
+        o peso tbm pode variar entre 100 e 900(novamente nem todas as fontes tem toda essa gama de variações)
+
+            weigth = peso
+            width = largura
+            higth = altura
+
+
+        font-style: (italico)
+
+        text-decoration: (para colocar sublinhado)
+
+
+        SHORTHAND font (condençar as modificações de fonte)
+        ordem:
+
+            - font-style > font-weight > font-size > font family
+
+        OBS:
+            - tem como importar fontes do google fontes direto no CSS
+            @import url('')
+
+            - Normalmente as fontes não tem todas as variações monstradas na aula.
+
+    -->
+
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, doloremque dicta maxime id similique enim quo incidunt consequuntur vitae quos illum. Sunt sed architecto, fuga sit itaque veritatis officiis temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde hic harum quasi illo rerum recusandae nesciunt aut perspiciatis eligendi iste corrupti maiores laboriosam magni, quaerat illum! Non, vitae tempore!</p>
+
+    <h2>Titulo 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio suscipit ipsam beatae quis quo consequuntur. Veniam quas error quae illum earum porro necessitatibus, officiis unde doloribus magnam beatae odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, tempore dignissimos? Repellendus nesciunt vel, minima aliquam nam quam, earum, maiores ad dolorem voluptatum doloremque explicabo unde! Libero unde rem magnam.
+    </p>
+</body>
+</html>

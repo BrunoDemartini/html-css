@@ -1,0 +1,195 @@
+:root{
+    --cor-bg: #84E1AD;
+    --cor-font: #ffffff;
+    --cor-font-article: #1d693e;
+    --cor-bg-article: #ffffff;
+    --cor-bg-h2: #84E1AD;
+
+    --font-article-h: 'idroid';
+    --font-article-p: Arial, Helvetica, sans-serif;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fonts/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'big-noodle';
+    src: url('../fonts/big_noodle_titling.ttf') format('truetype');
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--cor-bg);    
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 1.2em;
+}
+
+
+header{
+    background-image: linear-gradient(#3dda83, #175030);
+    text-align: center;
+    color: var(--cor-font);
+    padding-top: 2em;
+    padding-bottom: 1em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.600);    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header h1{
+    margin-top: 0;
+    font-size: 2.3em;
+    font-family: 'big-noodle','Stick No Bills', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
+}
+
+header p{
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor-font);
+    margin-right: 0.5em;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: bolder;
+}
+
+header a::after{
+    content: ' |';
+}
+
+header a:hover{
+    color: var(--cor-bg);
+}
+
+main{
+    /* box-shadow: 1px 1px 1px black; */
+    text-indent: 2em;
+}
+
+main h1, h2{
+    text-indent: 0px;
+}
+
+article{
+    background-color: var(--cor-bg-article);
+    color: var(--cor-font-article);
+    width: 70vw;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.600);
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+article h1{
+    font-family: var(--font-article-h);
+}
+
+article h2{
+    font-family: var(--font-article-h);
+    /* background-color: var(--cor-bg-h2); */
+    background-image: linear-gradient(to right, var(--cor-bg-h2), white);
+}
+    
+article p{
+    color: black;
+    text-align: justify ;
+    font-family: var(--font-article-p);
+}
+
+article img, article picture{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+article #bugdroid{
+    max-width: 300px;
+    margin: auto;
+}  
+
+main #video{
+    background-color: var(--cor-font-article);
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+#video > iframe{
+    /* background-color: aqua; */
+    height: 90%;
+    width: 90%;
+    /* margin: auto; */
+    /* margin-bottom: 3em; */
+}
+
+aside #aside-header{
+    /* width: 100%; */
+    background-color: var(--cor-font-article);
+    padding: 10px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside #aside-header h3{
+    margin: 0px;
+    color: var(--cor-font);
+}
+
+aside #aside-main{
+    background-color: var(--cor-bg);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+#aside-main table{
+    /* background-color: bisque; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.8em;
+    width: 100%;
+    list-style-type: disc;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--cor-font-article);
+    margin-top: 2em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer > p{
+    color: var(--cor-font);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin: 0px;
+}

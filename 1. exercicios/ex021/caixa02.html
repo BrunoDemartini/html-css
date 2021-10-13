@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+
+    <style>
+
+        :root{
+            --background: burlywood;
+            --div: blanchedalmond
+        }
+
+        body{
+            background-color: var(--background);
+            margin: 0px;
+        }
+
+        header{
+            display: flex;
+            background-color: var(--div);
+            align-items: center;
+            justify-content: center;
+            color: brown;
+            margin-bottom: 2em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
+        }
+
+        @keyframes go-back {
+            0% {
+                transform: translateX(100px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .quadrado {
+            animation: go-back 1s;
+        }
+
+        header li{
+            display: inline;
+        }
+        header a{
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-left: 0.2em;
+        }
+        header a::after{
+            content: ' |';
+            font-weight: bold;
+        }
+
+        header a:hover{
+            color: tomato;
+        }
+
+        header h1:hover{
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+
+            -o-transition-duration: 1s;
+        }
+
+        main{
+            background-color: var(--div);
+            /* padding: 10px; */
+            margin-bottom: 2em;
+            box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.288);
+
+            border-radius: 4em 4em 0em 4em;
+        }
+
+        .noticias{
+            padding: 10px;
+        }
+
+        .noticias p{
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .escritor p{
+            font-size: 0.7em;
+            /* margin-left: 70%; */
+            text-align: end;
+        }
+        
+        footer{
+            background-color: var(--div);
+            text-align: center;
+            padding: 10px;
+            /* box-shadow: 1px 1px 1px black; */
+            margin: 10px;
+        }
+
+        footer > p{
+            margin: 0;
+        }
+
+        #bola{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            margin-top: 50px;
+            
+            border-radius: 50%;
+
+            border: 5px  black;
+            /* border-style:; */
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Antigamente existiam duas
+    
+        div e span
+
+        ai fazia varias div e coloca 
+        id:Cabecalho
+        id:Menu
+        id:Conteudo
+        id:Rodape
+        
+    -->
+
+    <!-- Com HTML5 surgiram as grouping tags semanticas
+    
+        header
+        menu
+        nav
+        main
+        footer
+    
+        Basicamente eles são divs, porem com semantica.
+
+    -->
+    
+    <header>
+        <h1 >Meu Site</h1>
+        <nav class="quadrado">
+            <ul>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">sobre</a></li>
+                <li><a href="#">conteudo</a></li>
+            </ul>
+            <!-- Se utilizar o # no a ele funciona e não vai para nenhum lugar
+            
+            Se usar somente a / ele volta para a pasta raiz onde esta o arquivo. Mó locura
+            
+            -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section class="noticias" id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, possimus. Ullam, temporibus ducimus quae dolor pariatur ex tenetur beatae voluptas fugit voluptatibus assumenda et deleniti in dolorem doloremque explicabo quidem?</p>
+                <aside class="escritor">
+                    <p >Artigo escrito pelo José</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Brunin</p>
+    </footer>
+
+    <div id="bola">
+        
+    </div>
+
+    <!-- 
+        tem como fazer bordas decoradas
+         - border-image:
+                source
+                slice
+                repeat
+            OBS: Tem que ter um parametro de borda par "sustentar" o border-image
+
+         Achei meio bosta
+     -->
+
+</body>
+</html>
